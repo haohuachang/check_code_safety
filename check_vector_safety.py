@@ -84,7 +84,7 @@ def analyze_cpp_directory(directory_path):
     """
     for root, _, files in os.walk(directory_path):
         for file in files:
-            if file.endswith('.cpp') or file.endswith('.hpp') or file.endswith('.h'):
+            if file.endswith('.cpp') or file.endswith('.cc') or file.endswith('.hpp') or file.endswith('.h'):
                 file_path = os.path.join(root, file)
                 analyze_cpp_file(file_path)
 
